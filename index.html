@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtros da Câmera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <video id="webcam" autoplay playsinline></video>
+
+    <div class="controls">
+      <button onclick="applyFilter('none')">Normal</button>
+      <button onclick="applyFilter('grayscale')">Preto e Branco</button>
+      <button onclick="applyFilter('sepia')">Sépia</button>
+      <button onclick="applyFilter('invert')">Inverter Cores</button>
+      <button onclick="applyFilter('blur')">Desfocar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
